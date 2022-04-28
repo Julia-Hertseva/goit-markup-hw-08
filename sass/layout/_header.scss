@@ -16,7 +16,7 @@
   padding-bottom: 16px;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
 .navigation-list,
 .address {
   display: none;
@@ -79,15 +79,20 @@
 }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
 .mobile-menu-btn,
 .mobile-menu {
   display: none;
 }
 
-.navigation,
-.navigation-list {
+
+.navigation {
 @extend %align;
+}
+
+.navigation-list {
+  @extend %align;
+  margin-right: 84px;
 }
 
 
@@ -123,10 +128,40 @@
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.address-link-item {
+  @extend %align;
+  // &:not(:last-child) {
+  //   margin-right: 50px;
+  // }
+}
   
+.address-list-link {
+  @extend %align;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+
+    .icon-envelope {
+      fill: var(--accent-color);
+    }
+
+    .icon-smartphone {
+      fill: var(--accent-color);
+    }
+  }
+}
 }
 
-@media screen and (min-width:1600px) {
+@media screen and (min-width: 1600px) {
 .logotype {
   margin-right: 93px;
   padding-top: 24px;
@@ -188,13 +223,6 @@
 //   padding-bottom: 32px;
 // }
 
-// .address-link-item {
-//   @extend %align;
-//   &:not(:last-child) {
-//     margin-right: 50px;
-//   }
-// }
-
 // .address {
 //   margin-left: auto;
 // }
@@ -232,29 +260,7 @@
   }
 }
 
-// .address-list-link {
-//   @extend %align;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.143;
-//   letter-spacing: 0.02em;
-//   color: var(--main-text-color);
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//     cursor: pointer;
-
-//     .icon-envelope {
-//       fill: var(--accent-color);
-//     }
-
-//     .icon-smartphone {
-//       fill: var(--accent-color);
-//     }
-//   }
-// }
 
 .mobile-menu-btn_icon {
   width: 40px;
