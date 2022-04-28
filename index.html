@@ -26,6 +26,11 @@
                 </li>
             </ul>
         </nav>
+        <button type="button" class="mobile-menu-btn" data-menu-open>
+            <svg class="mobile-menu-btn_icon">
+                <use href="./images/icon/sprite.svg#mobile_burger-menu"></use>
+            </svg>
+        </button>
         <address class="address">
             <ul class="list address-link">
                 <li class="address-link-item">
@@ -43,6 +48,55 @@
             </ul>
         </address>
         </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu_container">
+                <button type="button" class="mobile-menu_close-btn" data-menu-close>
+                    <svg class="mobile-menu_close-icon">
+                        <use href="./images/icon/sprite.svg#mobile_close-btn"></use>
+                    </svg>
+                </button>
+                <ul class="list mobile-menu__nav">
+                    <li class="mobile-menu__nav-item">
+                        <a href="./index.html" class="link mobile-menu__nav-link current">Студия</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="./portfolio.html" class="link mobile-menu__nav-link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="#" class="link mobile-menu__nav-link">Контакты</a>
+                    </li>
+                </ul>
+                
+                <address class="mobile-menu__address">
+                    <ul class="list mobile-menu__address-link">
+                        <li class="mobile-menu__address-item">
+                            <a href="tel:+380961111111" class="link mobile-menu__link">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu__address-item">
+                            <a href="mailto:info@devstudio.com" class="link mobile-menu__link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+                
+            <div class="mobile-menu__social-links">
+                <ul class="list mobile-menu__social-list">
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="link mobile-menu__social-link">Instagram <span class="delimiter">|</span></a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="link mobile-menu__social-link">Twitter <span class="delimiter">|</span></a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="link mobile-menu__social-link">Facebook <span class="delimiter">|</span></a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="link mobile-menu__social-link">LinkedIn <span class="delimiter">|</span></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
     </header>
     <main>
         <!-- Hero -->
@@ -51,7 +105,7 @@
             <button class="service-btn" type="button" data-modal-open>Заказать услугу</button>
         </section>
         <!--Our advantages-->
-        <section class="advantages">
+         <section class="advantages">
             <div class="container">
             <h2 class="visually-hidden">Наши преимущества</h2>
             <ul class="list advantages-list">
@@ -323,7 +377,7 @@
         </section>
     </main>
 
-    <!--Footer-->
+    <!-- Footer -->
     <footer class="footer">
     <div class="container">
         <div class="footer-section__footer-address">
@@ -389,7 +443,7 @@
     </div>
     </footer>
 
-    <!--Modal-window-->
+    <!--Modal-window -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <p class="message">Оставьте свои данные, мы вам перезвоним</p>
@@ -446,6 +500,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
 
