@@ -21,8 +21,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 450px;
+  height: 95%;
   width: 528px;
-  height: 581px;
+  max-height: 609px;
+  overflow: scroll;
   padding: 32px 40px 39px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -160,8 +164,8 @@
 .modal-form-label-policy {
   @extend %align;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 
@@ -219,5 +223,17 @@
   &:focus {
     background-color: #188ce8;
     outline: none;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .modal {
+    width: 528px;
+    height: 582px;
+  }
+
+  .modal-form-label-policy {
+    font-size: 14px;
+    line-height: 1.714;
   }
 }
