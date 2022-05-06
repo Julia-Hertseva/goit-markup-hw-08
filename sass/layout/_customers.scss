@@ -15,10 +15,10 @@
 }
 
 .customers-list {
-  @extend %align;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .customers-list-item {
@@ -36,9 +36,10 @@
 }
 
 .customers-list-link {
-  @extend %wrap;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  @extend %margin;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
   border: 1px solid var(--link-color);

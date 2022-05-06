@@ -13,7 +13,7 @@
 }
 
 .footer-address-list {
-  @extend %margin;
+  margin: 0 auto;
   margin-top: 20px;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .footer-section__footer-social-links {
-  @extend %margin;
+  margin: 0 auto;
   margin-top: 60px;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .subscription-input {
-  @extend %margin;
+  margin: 0 auto;
   display: inline-flex;
   align-items: center;
   height: 50px;
@@ -115,8 +115,9 @@
 
 @media screen and (min-width: 768px) and (max-width:1199) {
 .footer {
-  @extend %wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-section__footer-address {

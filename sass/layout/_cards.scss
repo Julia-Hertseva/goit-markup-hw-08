@@ -1,10 +1,10 @@
 .portfolio {
 margin: auto;
 text-align: center;
-
 }
+
 .cards-list {
-   width: 100%;
+    width: 100%;
     max-width: 350px;
     margin-bottom: 30px;
 }
@@ -77,7 +77,8 @@ text-align: center;
 
 @media screen and (min-width: 768px) {
 .cards {
-  @extend %wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .cards-list {

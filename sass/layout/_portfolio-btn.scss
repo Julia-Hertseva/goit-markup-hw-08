@@ -4,9 +4,10 @@
 }
 
 .portfolio-list {
-  @extend %wrap;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
-  @extend %margin;
+  margin: 0 auto;
 }
 
 .portfolio-list-item {
@@ -61,7 +62,7 @@
 .portfolio-list {
   margin-bottom: 30px;
   justify-content: center;
-  @extend %margin;
+  margin: 0 auto;
 }
 
 .portfolio-list-item {
