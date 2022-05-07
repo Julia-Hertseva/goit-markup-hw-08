@@ -88,14 +88,14 @@ margin: 0 auto;
 
 @media screen and (min-width: 1200px) {
 .team {
+
     padding-top: 94px;
     padding-bottom: 94px;
   }
 
   .team-list {
     display: flex;
-    
-
+    justify-content: center;
   }
 
 .team-card {
