@@ -35,7 +35,7 @@
             <ul class="list address-link">
                 <li class="address-link-item">
                     <a class="link address-list-link" href="mailto:info@devstudio.com"> 
-                        <svg class="envelope">
+                        <svg class="icon-envelope">
                         <use href="./images/icon/sprite.svg#icon-envelope"></use>
                         </svg> info@devstudio.com</a>
                 </li> 
@@ -66,7 +66,8 @@
                         <a href="#" class="link mobile-menu__nav-link">Контакты</a>
                     </li>
                 </ul>
-                            
+                
+                <div class="mobile-bottom-section">
                     <ul class="list mobile-menu__address-link">
                         <li class="mobile-menu__address-item">
                             <a href="tel:+380961111111" class="link mobile-menu__link-tel">+38 096 111 11 11</a>
@@ -90,7 +91,7 @@
                         <a href="" class="link mobile-menu__social-link">LinkedIn</a>
                     </li>
                 </ul>
-        
+                </div>        
             </div>
         </div>
     </header>
@@ -201,9 +202,9 @@
                 <li class="team-list-item">
                     <picture>
                         <source srcset="./images/our-team/ihor.webp 1x, ./images/our-team/ihor@2x.webp 2x"
-                            media="(min-width: 1600px)" type="image/webp" />
+                            media="(min-width: 1200px)" type="image/webp" />
                         <source srcset="./images/our-team/ihor.jpg 1x, ./images/our-team/ihor@2x.jpg 2x"
-                            media="(min-width: 1600px)" />
+                            media="(min-width: 1200px)" />
                         <source srcset="./images/our-team/ihor_tablet.webp 1x, ./images/our-team/ihor_tablet@2x.webp 2x"
                             media="(min-width: 768px)" type="image/webp" />
                         <source srcset="./images/our-team/ihor_tablet.jpg 1x, ./images/our-team/ihor_tablet@2x.jpg 2x"
@@ -257,9 +258,9 @@
                 <li class="team-list-item">
                     <picture>
                         <source srcset="./images/our-team/olga.webp 1x, ./images/our-team/olga@2x.webp 2x" 
-                            media="(min-width: 1600px)" type="image/webp" />
+                            media="(min-width: 1200px)" type="image/webp" />
                         <source srcset="./images/our-team/olga.jpg 1x, ./images/our-team/olga@2x.jpg 2x"
-                            media="(min-width: 1600px)" />
+                            media="(min-width: 1200px)" />
                         <source srcset="./images/our-team/olga_tablet.webp 1x, ./images/our-team/olga_tablet@2x.webp 2x"
                             media="(min-width: 768px)" type="image/webp" />
                         <source srcset="./images/our-team/olga_tablet.jpg 1x, ./images/our-team/olga_tablet@2x.jpg 2x"
@@ -313,9 +314,9 @@
                 <li class="team-list-item">
                     <picture>
                         <source srcset="./images/our-team/nikolay.webp 1x, ./images/our-team/nikolay@2x.webp 2x"
-                            media="(min-width: 1600px)" type="image/webp" />
+                            media="(min-width: 1200px)" type="image/webp" />
                         <source srcset="./images/our-team/nikolay.jpg 1x, ./images/our-team/nikolay@2x.jpg 2x"
-                            media="(min-width: 1600px)" />
+                            media="(min-width: 1200px)" />
                         <source srcset="./images/our-team/nikolay_tablet.webp 1x, ./images/our-team/nikolay_tablet@2x.webp 2x"
                             media="(min-width: 768px)" type="image/webp" />
                         <source srcset="./images/our-team/nikolay_tablet.jpg 1x, ./images/our-team/nikolay_tablet@2x.jpg 2x"
@@ -369,9 +370,9 @@
                 <li class="team-list-item">
                     <picture>
                         <source srcset="./images/our-team/mikhail.webp 1x, ./images/our-team/mikhail@2x.webp 2x"
-                            media="(min-width: 1600px)" type="image/webp" />
+                            media="(min-width: 1200px)" type="image/webp" />
                         <source srcset="./images/our-team/mikhail.jpg 1x, ./images/our-team/mikhail@2x.jpg 2x"
-                            media="(min-width: 1600px)" />
+                            media="(min-width: 1200px)" />
                         <source srcset="./images/our-team/mikhail_tablet.webp 1x, ./images/our-team/mikhail_tablet@2x.webp 2x"
                             media="(min-width: 768px)" type="image/webp" />
                         <source srcset="./images/our-team/mikhail_tablet.jpg 1x, ./images/our-team/mikhail_tablet@2x.jpg 2x"
@@ -485,6 +486,7 @@
     <!-- Footer -->
     <footer class="footer">
     <div class="container">
+        <div class="footer__contacts">
         <div class="footer-section__footer-address">
         <a class="link logotype footer-logo" href="/"><span class="logotype_web">Web</span><span class="logotype_studio">Studio</span></a>
         <ul class="list footer-address-list">
@@ -536,6 +538,7 @@
                 </li>
             </ul>
         </div>
+    </div>
 
         <div class="footer-section__subscription">
             <p class="subscription-title">Подпишитесь на рассылку</p>

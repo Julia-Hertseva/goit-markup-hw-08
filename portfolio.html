@@ -16,10 +16,10 @@
                 <a class="link logotype" href="/"><span class="logotype_web">Web</span>Studio</a>
                 <ul class="list navigation-list">
                     <li class="navigation-list__item">
-                        <a class="link navigation-list__link current" href="#">Студия</a>
+                        <a class="link navigation-list__link " href="./index.html">Студия</a>
                     </li>
                     <li class="navigation-list__item">
-                        <a class="link navigation-list__link" href="./portfolio.html">Портфолио</a>
+                        <a class="link navigation-list__link current" href="#">Портфолио</a>
                     </li>
                     <li class="navigation-list__item">
                         <a class="link navigation-list__link" href="#">Контакты</a>
@@ -35,7 +35,7 @@
                 <ul class="list address-link">
                     <li class="address-link-item">
                         <a class="link address-list-link" href="mailto:info@devstudio.com">
-                            <svg class="envelope">
+                            <svg class="icon-envelope">
                                 <use href="./images/icon/sprite.svg#icon-envelope"></use>
                             </svg> info@devstudio.com</a>
                     </li>
@@ -57,16 +57,17 @@
                 </button>
                 <ul class="list mobile-menu__nav">
                     <li class="mobile-menu__nav-item">
-                        <a href="./index.html" class="link mobile-menu__nav-link current">Студия</a>
+                        <a href="./index.html" class="link mobile-menu__nav-link">Студия</a>
                     </li>
                     <li class="mobile-menu__nav-item">
-                        <a href="./portfolio.html" class="link mobile-menu__nav-link">Портфолио</a>
+                        <a href="./portfolio.html" class="link mobile-menu__nav-link current">Портфолио</a>
                     </li>
                     <li class="mobile-menu__nav-item">
                         <a href="#" class="link mobile-menu__nav-link">Контакты</a>
                     </li>
                 </ul>
-    
+
+                <div class="mobile-bottom-section">    
                 <ul class="list mobile-menu__address-link">
                     <li class="mobile-menu__address-item">
                         <a href="tel:+380961111111" class="link mobile-menu__link-tel">+38 096 111 11 11</a>
@@ -90,7 +91,7 @@
                         <a href="" class="link mobile-menu__social-link">LinkedIn</a>
                     </li>
                 </ul>
-    
+                </div>    
             </div>
         </div>
     </header>
@@ -168,7 +169,7 @@
                         <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
                         <div class="text">
-                        <h2 class="title-card">Постер <span lang="en">New Orlean vs Golden Star</span></h2> 
+                        <h2 class="title-card title-card_poster">Постер <span lang="en">New Orlean vs Golden Star</span></h2> 
                         <p class="subtitle-card">Дизайн</p>
                         </div>
                     </a>
@@ -383,6 +384,7 @@
 
         <footer class="footer">
             <div class="container">
+                <div class="footer__contacts"></div>
                     <div class="footer-section__footer-address">
                         <a class="link logotype footer-logo" href="/"><span class="logotype_web">Web</span><span
                                 class="logotype_studio">Studio</span></a>
@@ -433,6 +435,8 @@
                             </li>
                         </ul>
                     </div>
+                    </div>
+
         
                     <div class="footer-section__subscription">
                         <p class="subscription-title">Подпишитесь на рассылку</p>
@@ -445,7 +449,7 @@
                             </button>
                         </form>
                     </div>
-            </div>
+        
         </footer>
         <script src="./js/menu.js"></script>
     </body>
