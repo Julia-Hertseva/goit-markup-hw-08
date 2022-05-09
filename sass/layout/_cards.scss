@@ -21,7 +21,7 @@ margin: auto;
   font-size: 18px;
   line-height: 1.556;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--main-bg-color);
 
   position: absolute;
   left: 0;
@@ -57,6 +57,7 @@ margin: auto;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    margin: 0;
     margin-bottom: 4px;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
@@ -83,10 +84,6 @@ margin: auto;
     margin: 15px;
 }
 
-.title-card_poster {
-  font-size: 16px;
-}
-
 .overlay {
   padding-top: 49px;
 }
@@ -94,6 +91,9 @@ margin: auto;
 .text {
   padding-bottom: 56px;
 }
+// .text:nth-child(2) {
+//   padding-bottom: 14px;
+// }
 }
 
 @media screen and (min-width: 1200px) {

@@ -1,11 +1,15 @@
 .footer {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+.footer-section__footer-address {
+  text-align: center;
+}
+
 .footer-logo {
-  margin: 0 auto;
+  margin: auto;
+  padding: 0;
 }
 
 .footer-address-item:not(:last-child) {
@@ -13,7 +17,7 @@
 }
 
 .footer-address-list {
-  margin: 0 auto;
+  // margin: 0 auto;
   margin-top: 20px;
 }
 
@@ -42,7 +46,6 @@
   }
 }
 
-
 .join,
 .subscription-title {
   margin-top: 0;
@@ -60,10 +63,6 @@
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--main-bg-color);
   border-radius: 50%;
-}
-
-.footer-section__subscription {
-  margin-top: 60px;
 }
 
 .subscription-input {
@@ -112,50 +111,34 @@
 }
 
 @media screen and (max-width: 767px) {
-.footer-section__footer-address {
-  // width: fit-content;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.footer-section__footer-social-links {
-  margin: 0 auto;
+.footer-section__footer-social-links,
+.footer-section__subscription {
+  // margin: 0 auto;
   margin-top: 60px;
   }
 }
-@media screen and (min-width: 768px) {
- .footer {
-      display: flex;
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-} 
 
-@media screen and (min-width: 768px) and (max-width:1199) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 .footer__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
- align-items: baseline;
+  align-items: baseline;
 }
 
-// .footer-section__footer-social-links {
-// width: 206px;
+// .footer-section__footer-address {
+//   margin-right: 165px;
 // }
 
-// .footer-section__footer-address {
-// width: 232px;
-// }
+.footer-section__subscription {
+  display: block;
+  min-width: 570px;
+  margin-top: 60px;
+  // margin-left: auto;
+}
 }
 
 @media screen and (min-width: 1200px) {
-
-// .footer {
-//   display: flex;
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-// }
-
 .footer > .container {
   display: flex;
   align-items: baseline;
@@ -167,12 +150,13 @@
 
 .footer-section__footer-address {
   margin-right: 70px;
+  text-align: start;
 }
 
 .footer-section__footer-social-links {
   width: auto;
   align-items: baseline;
-  margin-right: 93px;
+  // margin-right: 93px;
 }
 
 .join,
@@ -183,6 +167,7 @@
 .footer-section__subscription {
   display: block;
   min-width: 570px;
+  margin-left: auto;
 }
 
 .subscription-form {
