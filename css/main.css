@@ -466,7 +466,7 @@ img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero-title {
     max-width: 360px;
   }
@@ -1220,6 +1220,9 @@ img {
   .modal {
     min-width: 528px;
     height: 581px;
+  }
+  .message {
+    width: 100%;
   }
   .modal-form-label-policy {
     font-size: 14px;
